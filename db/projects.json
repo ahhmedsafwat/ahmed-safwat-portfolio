@@ -1,0 +1,74 @@
+[
+  {
+    "id": "project-001",
+    "title": "Shop.co",
+    "description": "Shop.co is an e-commerce website primarily focused on clothing, offering a wide variety of apparel for different demographics. The platform caters to fashion enthusiasts, providing an extensive range of products from casual wear to formal attire, ensuring there is something for everyone.",
+    "techStack": ["ReactJs", "Redux", "TailWind", "React Query"],
+    "images": {
+      "home": "../src/assets/images/shop.co/home.webp",
+      "mobile": "../src/assets/images/shop.co/mobile.webp",
+      "desktop": "../src/assets/images/shop.co/desktop.webp",
+      "desktopLight": "",
+      "mobileLight": "",
+      "rest": [
+        "../src/assets/images/shop.co/cart.webp",
+        "../src/assets/images/shop.co/products.webp",
+        "../src/assets/images/shop.co/product-details.webp",
+        "../src/assets/images/shop.co/style-browes.webp"
+      ]
+    },
+    "link": "https://ahhmedsafwat.github.io/shop.co/",
+    "gitHub": "https://github.com/ahhmedsafwat/shop.co",
+    "date": "Mar, 2024 - May, 2024"
+  },
+  {
+    "id": "project-002",
+    "title": "Country Info",
+    "description": "An app that displays a list of countries and regions, providing all the information you might need about each country.",
+    "techStack": [
+      "ReactJs",
+      "TailWind",
+      "Shadcn Ui",
+      "MongoDB",
+      "Express",
+      "React Query"
+    ],
+    "images": {
+      "home": "../src/assets/images/country/home.webp",
+      "mobile": "../src/assets/images/country/mobile.webp",
+      "desktop": "../src/assets/images/country/desktop.webp",
+      "desktopLight": "../src/assets/images/country/desktop-light-mood.webp",
+      "mobileLight": "../src/assets/images/country/mobile-light-mood.webp",
+      "rest": [
+        "../src/assets/images/country/country-details.webp",
+        "../src/assets/images/country/search.webp"
+      ]
+    },
+    "link": "https://country-info-sandy-phi.vercel.app/",
+    "gitHub": "https://github.com/ahhmedsafwat/country-info",
+    "date": "May 16, 2024 - May 31, 2024"
+  },
+  {
+    "id": "project-003",
+    "title": "Longboat Rönd",
+    "description": "a company that offers shipping and logistics services. The phrase \"One-Stop Solution for All Your Shipping Needs\" suggests that LbR provides comprehensive shipping services. Additionally, LbR, being a UK-registered subsidiary, has access to Longboat Solutions (LbS), a Norwegian-registered division of the same group that focuses on global supply and logistics",
+    "techStack": ["JavaScript", "HTML", "CSS", "Custom Css utilite"],
+    "images": {
+      "home": "../src/assets/images/long-boat/home.webp",
+      "mobile": "../src/assets/images/long-boat/mobile.webp",
+      "desktop": "",
+      "desktopLight": "",
+      "mobileLight": "",
+      "rest": [
+        "../src/assets/images/long-boat/control-panal.webp",
+        "../src/assets/images/long-boat/gallery.webp",
+        "../src/assets/images/long-boat/team.webp",
+        "../src/assets/images/long-boat/mobile-gallery.webp",
+        "../src/assets/images/long-boat/mobile-skills.webp"
+      ]
+    },
+    "link": "https://ahhmedsafwat.github.io/Longboat-Rond/",
+    "gitHub": "https://github.com/ahhmedsafwat/Longboat-Rond",
+    "date": "Nov 28, 2023 - Dec 11, 2023"
+  }
+]

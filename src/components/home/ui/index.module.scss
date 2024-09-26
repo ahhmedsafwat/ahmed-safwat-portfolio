@@ -1,0 +1,30 @@
+.scrolling__fade {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+    backdrop-filter: 10px;
+  }
+  &::before {
+    left: 0;
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--background)),
+      transparent
+    );
+  }
+  &::after {
+    right: 0;
+    background-image: linear-gradient(
+      to left,
+      hsl(var(--background)),
+      transparent
+    );
+  }
+}
