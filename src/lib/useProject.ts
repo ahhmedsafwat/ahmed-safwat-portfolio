@@ -7,7 +7,7 @@ export const useProjects = () => {
   const { data } = useQuery<Project[]>({
     queryKey: ["fetchData"],
     queryFn: () =>
-      axios.get("../../../db/projects.json").then((response) => response.data),
+      axios.get("/db/projects.json").then((response) => response.data),
   });
 
   return data;
