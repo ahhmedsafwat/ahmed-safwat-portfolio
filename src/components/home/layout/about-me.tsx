@@ -1,5 +1,4 @@
-// import SectionTitle from "@/components/ui/section-title";
-import AboutMeComponent from "../../ui/text-gradiant-opacity";
+import AboutMeComponent from "../ui/text-gradiant-opacity";
 import "./layout.module.scss";
 
 const AboutMe = () => {

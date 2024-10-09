@@ -25,14 +25,7 @@
     "id": "project-002",
     "title": "Country Info",
     "description": "An app that displays a list of countries and regions, providing all the information you might need about each country.",
-    "techStack": [
-      "ReactJs",
-      "TailWind",
-      "Shadcn Ui",
-      "MongoDB",
-      "Express",
-      "React Query"
-    ],
+    "techStack": ["ReactJs", "TailWind", "MongoDB", "Express", "React Query"],
     "images": {
       "home": "/assets/images/country/home.webp",
       "mobile": "/assets/images/country/mobile.webp",

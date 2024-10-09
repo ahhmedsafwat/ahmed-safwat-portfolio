@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { Projects, Home } from "./pages";
 import { ReactLenis } from "lenis/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Footer from "./components/footer";
 
 const queryClient = new QueryClient({
@@ -38,7 +38,7 @@ const App = () => {
         </AnimatePresence>
         <Footer />
       </ReactLenis>
-      {/* <ReactQueryDevtools /> */}
+      <ReactQueryDevtools />
     </QueryClientProvider>
   );
 };

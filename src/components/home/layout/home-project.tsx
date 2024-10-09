@@ -5,11 +5,11 @@ const HomeProject = () => {
   const data = useProjects();
 
   return (
-    <div className="container pb-32 relative flex flex-none flex-col flex-nowrap justify-center items-center gap-10 md:gap-[600px]">
+    <section className="container pb-32 relative flex flex-none flex-col flex-nowrap justify-center items-center gap-12 md:gap-[400px]">
       {data?.map((project) => (
         <HomeProjectComponent project={project} key={project.id} />
       ))}
-    </div>
+    </section>
   );
 };
 

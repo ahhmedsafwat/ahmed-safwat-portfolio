@@ -11,7 +11,7 @@ export const anim = (variants: Variants) => {
     variants,
     initial: "initial",
     animate: "enter",
-    whileHover: "hoverd",
+    whileHover: "hovered",
     exit: "exit",
   };
 };

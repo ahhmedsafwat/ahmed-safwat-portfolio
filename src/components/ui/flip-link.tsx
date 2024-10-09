@@ -13,14 +13,14 @@ const FlipLink = ({
 }: FlipLinkProps) => {
   return (
     <div
-      className={cn("overflow-hidden w-fit min-h-6 my-2", className)}
+      className={cn("overflow-hidden w-fit min-h-6", className)}
       {...props}
       role="button" // Optional: depending on the use case
     >
       <motion.span
         initial="initial"
         whileHover="hovered"
-        className="text-sm small:text-lg relative inline-block"
+        className="text-sm small:text-lg relative block"
       >
         <motion.span
           variants={{
@@ -33,13 +33,13 @@ const FlipLink = ({
                 ? { y: "-100%", opacity: 0 }
                 : { x: "-100%", opacity: 0 },
           }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="inline-block"
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          className="block"
         >
           {children}
         </motion.span>
         <motion.span
-          className="absolute inset-0 inline-block"
+          className="absolute inset-0 block"
           variants={{
             initial:
               direction === "vertical"
@@ -50,7 +50,7 @@ const FlipLink = ({
                 ? { y: "0", opacity: 1 }
                 : { x: "0", opacity: 1 },
           }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
         >
           {children}
         </motion.span>

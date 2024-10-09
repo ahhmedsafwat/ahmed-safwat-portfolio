@@ -23,11 +23,6 @@ const slides = [
 const ScrollingSkills = () => {
   return (
     <section>
-      {/* <SectionTitle
-        title="Tools behind this magic"
-        className="max-md:text-lg max-md:py-4 text-nowrap "
-      /> */}
-      <hr />
       <ScrollingSkillsComponent slides={slides} />
     </section>
   );

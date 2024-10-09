@@ -13,13 +13,13 @@
 @layer base {
   :root {
     --background: 300 4% 5%;
-    --foreground: 0 0 100;
+    --foreground: 0 0% 100%;
 
-    --primary: 0 0 90;
+    --primary: 0 0% 90%;
 
     --secondary: 37 98% 53%;
 
-    --cards: 221 51 16;
+    --cards: 221 51% 8%;
 
     --radius: 0.5rem;
   }
@@ -29,16 +29,13 @@ body {
   background-color: hsl(var(--background));
   background-image: radial-gradient(#e5e7eb5c 1px, transparent 1px);
   background-size: 4rem 4rem;
-  color: hsl(var(--foreground));
+  color: white;
   font-family: "pangaia";
   font-weight: 500;
   cursor: none;
   /* overflow-x: hidden; */
 }
-:hover,
-:focus {
-  cursor: none;
-}
+
 html.lenis,
 html.lenis body {
   height: auto;

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import FlipLink from "./ui/flip-link";
 import { anim } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import avatar from "/ahmed-safwat.png";
 
 const fadeDown = {
   initial: { opacity: 0, y: "-100%" },
@@ -15,10 +16,10 @@ const Header = () => {
       transition={{ delay: 1, duration: 0.3 }}
       className={`fixed flex items-center  w-full min-h-[10vh] z-20 border-b border-primary backdrop-blur-md`}
     >
-      <nav className="flex items-start justify-between w-full container px-2 sm:px-8 ">
+      <nav className="flex items-center justify-between w-full container px-2 sm:px-8 ">
         <Link to={"/"}>
-          <FlipLink className="overflow-hidden font-anton">
-            ahmed safwat
+          <FlipLink className="overflow-hidden size-[8vh] rounded-xl">
+            <img src={avatar} alt="my image" className="aspect-square" />
           </FlipLink>
         </Link>
         <ul className="flex gap-3 sm:gap-8 font-anton ">
