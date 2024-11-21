@@ -44,6 +44,7 @@ const Transition = ({ children }: { children: React.ReactNode }) => {
         {...anim(slideDown)}
         transition={{
           duration: 1,
+          ease: "easeIn",
         }}
       />
       <motion.div
@@ -56,6 +57,7 @@ const Transition = ({ children }: { children: React.ReactNode }) => {
         {...anim(slideUp)}
         transition={{
           duration: 1,
+          ease: "easeIn",
         }}
       />
     </>

@@ -41,12 +41,12 @@ export const HomeProjectComponent = ({
       animate="initial"
       whileHover="hovered"
     >
-      <motion.div
-        className="absolute z-10 h-full w-[100%] bg-cards/60 md:backdrop-blur-sm"
-        variants={layOut}
-      ></motion.div>
       <Link to={project.title}>
-        <div className="flex flex-col items-center gap-4 sm:gap-6 bg-cards overflow-hidden rounded-xl lg:max-h-[88vh] md:max-h-[85vh] w-full">
+        <motion.div
+          className="absolute z-10 h-full w-[100%] bg-cards/60 md:backdrop-blur-sm"
+          variants={layOut}
+        ></motion.div>
+        <div className="flex flex-col items-center gap-4 sm:gap-6 bg-cards overflow-hidden rounded-xl lg:max-h-[88vh] md:max-h-[85vh] w-full ">
           <h2 className="font-anton text-2xl sm:text-4xl md:text-6xl pt-4 sm:pt-6 z-10">
             {project.title}
           </h2>

@@ -29,9 +29,6 @@ const Header = () => {
           <Link to={"/about"}>
             <FlipLink>about me</FlipLink>
           </Link>
-          <Link to={"/about"}>
-            <FlipLink>contact</FlipLink>
-          </Link>
         </ul>
       </nav>
     </motion.header>
