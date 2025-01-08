@@ -14,7 +14,7 @@ const Header = () => {
     <motion.header
       {...anim(fadeDown)}
       transition={{ delay: 1, duration: 0.3 }}
-      className={`fixed flex items-center  w-full min-h-[10vh] z-20 border-b border-primary backdrop-blur-md`}
+      className={`fixed flex items-center w-full min-h-[10vh] z-50 border-b border-primary backdrop-blur-md`}
     >
       <nav className="flex items-center justify-between container max-sm:px-2">
         <Link to={"/"}>

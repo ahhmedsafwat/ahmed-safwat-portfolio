@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Footer from "./components/footer";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { useScrollToTop } from "./lib/utils";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -25,22 +26,25 @@ const App = () => {
     smoothTouch: true, //smooth scroll for touch devices
     smooth: true,
   };
+
+  useScrollToTop();
   return (
     <QueryClientProvider client={queryClient}>
       <CustomCursor />
-      <ReactLenis root options={lenisOptions}>
-        <Header />
-        <AnimatePresence mode="wait">
-          <SpeedInsights />
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/work" element={<Projects />} />
-            {/* <Route path="/about" element={<About />} /> */}
-            <Route path="/:title" element={<ProjectInfo />}></Route>
-          </Routes>
-        </AnimatePresence>
-        <Footer />
-      </ReactLenis>
+      <Header />
+      <div className="relative">
+        <ReactLenis root options={lenisOptions}>
+          <SpeedInsights /> {/* Moved outside AnimatePresence */}
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/work" element={<Projects />} />
+              <Route path="/:title" element={<ProjectInfo />}></Route>
+            </Routes>
+          </AnimatePresence>
+          <Footer />
+        </ReactLenis>
+      </div>
       <ReactQueryDevtools />
     </QueryClientProvider>
   );

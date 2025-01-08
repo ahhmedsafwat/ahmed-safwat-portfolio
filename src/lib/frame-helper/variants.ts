@@ -1,3 +1,13 @@
+export const staggerContainer = {
+  initial: {},
+  enter: {
+    transition: {
+      staggerChildren: 0.1, // Adjust the delay between children animations
+      delayChildren: 1,
+    },
+  },
+};
+
 const fadeUp = {
   initial: { opacity: 0, y: "100%" },
   enter: { opacity: 1, y: 0 },

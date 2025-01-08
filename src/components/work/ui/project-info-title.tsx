@@ -1,6 +1,12 @@
-import { cn } from "@/lib/utils";
+import { fadeLeft, fadeRight } from "@/lib/frame-helper/variants";
+import { anim, cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import React from "react";
+
+const hrVariant = {
+  initial: { width: 0 },
+  enter: { width: "100%", transition: { duration: 0.5 } },
+};
 
 export const ProjctInfoTitle = ({
   title,
@@ -10,16 +16,26 @@ export const ProjctInfoTitle = ({
   value: React.ReactNode;
 }) => {
   return (
-    <>
+    <motion.div>
       <motion.div className="container max-sm:px-2 flex justify-between gap-4 py-3">
-        <h1 className={cn("text-sm sm:text-xl font-mono text-gray-300")}>
+        <motion.h3
+          className={cn("text-sm sm:text-xl font-mono text-gray-300")}
+          {...anim(fadeRight)}
+          transition={{ delay: 2 }}
+        >
           {title}
-        </h1>
-        <p className="flex gap-2 font-noto font-light  text-sm sm:text-base  flex-wrap justify-end">
+        </motion.h3>
+        <motion.p
+          className="flex gap-2 font-noto font-light  text-sm sm:text-base  flex-wrap justify-end"
+          {...anim(fadeLeft)}
+          transition={{ delay: 2 }}
+        >
           {value}
-        </p>
+        </motion.p>
       </motion.div>
-      {title !== "Description" && <hr className="block" />}
-    </>
+      {title !== "Description" && (
+        <motion.hr className="block" variants={hrVariant} />
+      )}
+    </motion.div>
   );
 };
