@@ -1,8 +1,8 @@
 import { useLocation, Route, Routes } from "react-router-dom";
 import Header from "./components/header";
 import CustomCursor from "./lib/cursor/cursor";
-import { AnimatePresence } from "framer-motion";
-import { Projects, Home } from "./pages";
+import { AnimatePresence } from "motion/react";
+import { Projects, Home, ProjectInfo } from "./pages";
 import { ReactLenis } from "lenis/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
@@ -29,14 +29,14 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <CustomCursor />
       <ReactLenis root options={lenisOptions}>
+        <Header />
         <AnimatePresence mode="wait">
-          <Header />
           <SpeedInsights />
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<Projects />} />
             {/* <Route path="/about" element={<About />} /> */}
-            <Route path="/:title" element={<Projects />}></Route>
+            <Route path="/:title" element={<ProjectInfo />}></Route>
           </Routes>
         </AnimatePresence>
         <Footer />

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-black shadow-[0px_-20px_120px_0px,0px_5px_40px_20px] shadow-secondary min-h-14 flex items-center">
-        <div className="container flex justify-between items-center">
+        <div className="container max-sm:px-2 flex justify-between items-center">
           <div>
             <span className="text-xs font-noto">© Ahmed Safwat</span>
           </div>

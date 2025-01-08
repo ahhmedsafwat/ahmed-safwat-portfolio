@@ -1,6 +1,6 @@
 import { fadeDown, fadeRight, fadeUp } from "@/lib/frame-helper/variants";
 import { anim } from "@/lib/utils";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (

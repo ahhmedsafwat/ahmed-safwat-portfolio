@@ -2,7 +2,7 @@
   {
     "id": "project-001",
     "title": "Shop.co",
-    "description": "Shop.co is an e-commerce website primarily focused on clothing, offering a wide variety of apparel for different demographics. The platform caters to fashion enthusiasts, providing an extensive range of products from casual wear to formal attire, ensuring there is something for everyone.",
+    "description": "Shop.co is an e-commerce website primarily focused on clothing, ensuring there is something for everyone.",
     "techStack": ["ReactJs", "Redux", "TailWind", "React Query"],
     "images": {
       "home": "/assets/images/shop.co/home.webp",
@@ -44,7 +44,7 @@
   {
     "id": "project-003",
     "title": "Longboat Rönd",
-    "description": "a company that offers shipping and logistics services. The phrase \"One-Stop Solution for All Your Shipping Needs\" suggests that LbR provides comprehensive shipping services. Additionally, LbR, being a UK-registered subsidiary, has access to Longboat Solutions (LbS), a Norwegian-registered division of the same group that focuses on global supply and logistics",
+    "description": "a company that offers shipping and logistics services. The phrase \"One-Stop Solution for All Your Shipping Needs\" suggests that LbR provides comprehensive shipping services.",
     "techStack": ["JavaScript", "HTML", "CSS", "Custom Css utilite"],
     "images": {
       "home": "/assets/images/long-boat/home.webp",

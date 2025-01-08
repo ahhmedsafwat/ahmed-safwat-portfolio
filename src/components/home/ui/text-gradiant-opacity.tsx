@@ -2,7 +2,7 @@ import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const AboutMeComponent = ({ words }: { words: string }) => {
-  const element = useRef(null);
+  const element = useRef<HTMLParagraphElement>(null);
   const { scrollYProgress } = useScroll({
     target: element,
     offset: ["start 0.6", "end -1.2"], // Adjusted offset for a longer scroll range
@@ -11,7 +11,7 @@ const AboutMeComponent = ({ words }: { words: string }) => {
   return (
     <p
       ref={element}
-      className="leading-tight flex lg:text-5xl md:text-4xl text-lg flex-wrap justify-center md:justify-normal mb-28 "
+      className="leading-tight flex lg:text-5xl md:text-4xl text-lg flex-wrap justify-center md:justify-normal mb-6"
     >
       {words.split(" ").map((word, i) => (
         <Word

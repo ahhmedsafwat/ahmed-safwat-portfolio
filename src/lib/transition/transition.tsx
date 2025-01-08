@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { anim } from "@/lib/utils";
 const Transition = ({ children }: { children: React.ReactNode }) => {
   const slideUp = {

@@ -1,19 +1,20 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import style from "./index.module.scss";
 
 type slide = {
   icon: string;
+  name: string;
 };
 
 const ScrollingSkillsComponent = ({ slides }: { slides: slide[] }) => {
   const duplicatedSlides = [...slides, ...slides];
 
   return (
-    <div className="relative w-full overflow-hidden py-6 ">
+    <>
       {/* Wrapping div for seamless looping */}
       <div className={style.scrolling__fade}></div>
       <motion.div
-        className="flex gap-[2.5%]"
+        className="flex gap-[5%]"
         animate={{
           x: ["-100%", "0%"],
           transition: {
@@ -27,18 +28,19 @@ const ScrollingSkillsComponent = ({ slides }: { slides: slide[] }) => {
         {duplicatedSlides.map((slide, index) => (
           <div
             key={index}
-            className="flex-shrink-0"
-            style={{ width: `${100 / slides.length - 2.5}%` }}
+            className="flex-shrink-0 flex flex-col justify-center items-center text-xs md:text-sm"
+            style={{ width: `${100 / slides.length - 5}%` }}
           >
             <img
               src={slide.icon}
               alt={slide.icon}
-              className="flex items-center justify-center md:h-[12vw] md:w-[8vw]"
+              className="flex items-center justify-cente"
             />
+            <span className="text-center">{slide.name}</span>
           </div>
         ))}
       </motion.div>
-    </div>
+    </>
   );
 };
 

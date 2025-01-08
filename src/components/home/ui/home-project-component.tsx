@@ -7,7 +7,7 @@ import {
   techStackVariants,
 } from "@/lib/frame-helper/home-variants";
 import { Project } from "@/lib/type";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 import { Github, LucideLink2 } from "lucide-react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ export const HomeProjectComponent = ({
       animate="initial"
       whileHover="hovered"
     >
-      <Link to={project.title}>
+      <Link to={project.title} state={project}>
         <motion.div
           className="absolute z-10 h-full w-[100%] bg-cards/60 md:backdrop-blur-sm"
           variants={layOut}
@@ -60,7 +60,7 @@ export const HomeProjectComponent = ({
             {project.techStack.map((tech) => (
               <motion.li
                 key={tech}
-                className={` text-xs md:text-sm font-mono font-light ${style.glassy}`}
+                className={`text-xs md:text-sm font-mono font-light ${style.glassy}`}
                 variants={techStackVariants(isMediumScreen)}
               >
                 {tech}
