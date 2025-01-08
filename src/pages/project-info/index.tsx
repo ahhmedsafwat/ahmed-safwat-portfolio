@@ -10,7 +10,7 @@ export const ProjectInfo = () => {
 
   return (
     <Transition>
-      <section className="py-24">
+      <section className="pt-24">
         <ProjectInfoComponent project={projct} />
       </section>
     </Transition>
