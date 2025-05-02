@@ -7,18 +7,22 @@ import sass from "/assets/images/skills/sass-svgrepo-com.svg";
 import tailwind from "/assets/images/skills/tailwind-svgrepo-com.svg";
 import typescript from "/assets/images/skills/icons8-typescript.svg";
 import nextjs from "/assets/images/skills/icons8-nextjs.svg";
+import postgresql from "/assets/images/skills/postgresql.svg";
+import supabase from "/assets/images/skills/icons8-supabase-2401.svg";
 import ScrollingSkillsComponent from "@/components/home/ui/scrolling-skills-component";
 
 const skills = [
   { icon: html, name: "HTML" },
   { icon: css, name: "CSS" },
-  { icon: js, name: "Java Script" },
-  { icon: typescript, name: "Type Script" },
+  { icon: js, name: "JavaScript" },
+  { icon: typescript, name: "TypeScript" },
   { icon: react, name: "React" },
   { icon: nextjs, name: "Next.js" },
   { icon: tailwind, name: "Tailwind CSS" },
   { icon: sass, name: "Sass" },
-  { icon: framerMotion, name: "Framer Motion" },
+  { icon: framerMotion, name: "Motion" },
+  { icon: postgresql, name: "PostgreSQL" },
+  { icon: supabase, name: "Supabase" },
 ];
 
 const ScrollingSkills = () => {
