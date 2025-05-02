@@ -8,7 +8,7 @@ import tailwind from "/assets/images/skills/tailwind-svgrepo-com.svg";
 import typescript from "/assets/images/skills/icons8-typescript.svg";
 import nextjs from "/assets/images/skills/icons8-nextjs.svg";
 import postgresql from "/assets/images/skills/postgresql.svg";
-import supabase from "/assets/images/skills/icons8-supabase-2401.svg";
+import supabase from "/assets/images/skills/icons8-supabase-240.svg";
 import ScrollingSkillsComponent from "@/components/home/ui/scrolling-skills-component";
 
 const skills = [
